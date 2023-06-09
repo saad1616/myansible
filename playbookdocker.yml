@@ -4,15 +4,15 @@
   become_user: root
   tasks:
   - name: install tomcat
-    yum: name=tomcat state=present
+    apt: name=tomcat state=present
   - name: start tomcat
     service: name=tomcat state=started
   - name: install docker
-    yum: name=docker state=present
+    apt: name=docker state=present
   - name: start docker
     service: name=docker state=started
   - name: install git
-    yum: name=git state=present
+    apt: name=git state=present
   - name: clone a repo
     git: repo=https://github.com/Sonal0409/AnsibleDockerdemo.git dest=/tmp/mygitrepo1
   - name: build docker file
