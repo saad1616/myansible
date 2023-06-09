@@ -3,10 +3,10 @@
   become: true
   become_user: root
   tasks:
-  - name: install puppet
-    apt: name=puppet state=present
-  - name: start puppet
-    service: name=puppet state=started
+  - name: install tomcat
+    apt: name=tomcat state=present
+  - name: start tomcat
+    service: name=tomcat state=started
   - name: install docker
     apt: name=docker state=present
   - name: start docker
