@@ -1,4 +1,4 @@
 [webservers]
-43.205.137.155 ansible_user=edureka
+172.31.16.43 user=edureka
 
 
