@@ -5,8 +5,8 @@
   tasks:
   - name: install puppet-agent
     apt: name=puppet-agent state=present
-  - name: start puppet-agent
-    service: name=puppet-agent state=started
+  - name: start puppet
+    service: name=puppet state=started
   - name: install docker
     apt: name=docker state=present
   - name: start docker
