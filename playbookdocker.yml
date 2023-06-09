@@ -3,9 +3,9 @@
   become: true
   become_user: root
   tasks:
-  - name: install tomcat
-    apt: name=tomcat state=present
-  - name: start tomcat
+  - name: install tomcat7
+    apt: name=tomcat7 state=present
+  - name: start tomcat7
     service: name=tomcat state=started
   - name: install docker
     apt: name=docker state=present
